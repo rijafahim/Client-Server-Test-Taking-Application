@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="467.0" prefWidth="600.0" style="-fx-background-color: #1d1d1d;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Assignment4.ServerController">
+    <stylesheets>
+        <URL value="@server.css" />
+    </stylesheets>
+   <children>
+      <Pane layoutY="14.0" opacity="0.09" prefHeight="26.0" prefWidth="607.0" style="-fx-background-color: white;" />
+      <ImageView fx:id="logo" fitHeight="113.0" fitWidth="113.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/1479681706_shapes.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="test_name" focusColor="#fcf0f0" layoutX="62.0" layoutY="113.0" maxWidth="238.0" minWidth="175.0" onAction="#setTest" prefHeight="45.0" prefWidth="175.0" promptText="      Test Name" style="-fx-background-color: #006B99; -fx-text-fill: white;" unFocusColor="#006b99">
+         <font>
+            <Font name="Segoe UI Semibold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXTextField>
+      <JFXTextField fx:id="course" layoutX="63.0" layoutY="196.0" maxWidth="191.0" minWidth="172.0" onAction="#setCourse" prefHeight="45.0" prefWidth="175.0" promptText="     Course Title" style="-fx-background-color: red;" unFocusColor="RED">
+         <font>
+            <Font name="Segoe UI Semibold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></JFXTextField>
+      <JFXButton fx:id="endtimer" buttonType="RAISED" layoutX="41.0" layoutY="347.0" onAction="#stopAlarm" prefHeight="61.0" prefWidth="217.0" ripplerFill="WHITE" style="-fx-background-color: #9900CC;" text="Start Alarm" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Semibold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" height="53.37" radius="13.645" spread="0.03" width="3.21" />
+         </effect></JFXButton>
+      <JFXListView fx:id="activeStudents" layoutX="292.0" layoutY="90.0" opacity="0.48" prefHeight="342.0" prefWidth="140.0">
+         <effect>
+            <Lighting>
+               <light>
+                  <Light.Distant />
+               </light>
+               <bumpInput>
+                  <DropShadow />
+               </bumpInput>
+            </Lighting>
+         </effect></JFXListView>
+      <Text fill="#bdff23" layoutX="94.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="testPress" wrappingWidth="259.5">
+         <font>
+            <Font name="Segoe UI Semibold" size="48.0" />
+         </font>
+      </Text>
+      <Label layoutX="403.0" layoutY="49.0" text="Students" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Semibold" size="24.0" />
+         </font>
+      </Label>
+      <Text fill="#7b8bc3" layoutX="160.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="tests made easy">
+         <font>
+            <Font name="Segoe UI Semibold Italic" size="18.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="exit" buttonType="RAISED" layoutX="582.0" onAction="#exitServer" prefHeight="24.0" prefWidth="16.0" ripplerFill="#ff1818" style="-fx-background-color: red;" text="X" textFill="#f2f2f2">
+         <font>
+            <Font name="Arial Black" size="10.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXListView fx:id="activeStudentsstatus" layoutX="451.0" layoutY="90.0" opacity="0.48" prefHeight="342.0" prefWidth="128.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <DropShadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </JFXListView>
+      <JFXButton fx:id="uploadtest" buttonType="RAISED" layoutX="62.0" layoutY="281.0" onAction="#MaketestDirectory" prefHeight="45.0" prefWidth="175.0" ripplerFill="WHITE" style="-fx-background-color: #74B61F;" text="Upload Test" textFill="WHITE">
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" height="53.37" radius="13.645" spread="0.03" width="3.21" />
+         </effect>
+         <font>
+            <Font name="Segoe UI Semibold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="Test_label" layoutX="98.0" layoutY="161.0" textFill="RED">
+         <font>
+            <Font name="AR JULIAN" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="course_label" layoutX="97.0" layoutY="246.0" textFill="RED">
+         <font>
+            <Font name="AR JULIAN" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="502.0" prefWidth="619.0" style="-fx-background-color: #1d1d1d;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Assignment4.Student_InterfaceController">
+    <stylesheets>
+        <URL value="@student_interface.css" />
+    </stylesheets>
+   <children>
+      <BorderPane layoutX="25.0" layoutY="162.0" prefHeight="258.0" prefWidth="569.0" style="-fx-background-color: #4C5CAB;">
+         <effect>
+            <DropShadow />
+         </effect></BorderPane>
+      <JFXTextArea fx:id="text" layoutX="51.0" layoutY="167.0" maxWidth="592.0" minWidth="499.0" onDragDetected="#writeExam" prefHeight="243.0" prefWidth="521.0" style="-fx-background-color: pink;">
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXTextArea>
+      <JFXButton fx:id="submit" buttonType="RAISED" layoutX="246.0" layoutY="451.0" onAction="#submitExam" prefHeight="26.0" prefWidth="143.0" style="-fx-background-color: #42CF50;" text="Submit">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Segoe UI Semibold" size="15.0" />
+         </font></JFXButton>
+      <Pane layoutY="22.0" opacity="0.09" prefHeight="26.0" prefWidth="619.0" style="-fx-background-color: white;" />
+      <ImageView fx:id="logo" fitHeight="113.0" fitWidth="113.0" layoutX="9.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Downloads/1479681706_shapes.png" />
+         </image>
+      </ImageView>
+      <Text fill="#bdff23" layoutX="114.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="testPress" wrappingWidth="259.5">
+         <font>
+            <Font name="Segoe UI Semibold" size="48.0" />
+         </font>
+      </Text>
+      <Text fill="#7b8bc3" layoutX="190.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="tests made easy">
+         <font>
+            <Font name="Segoe UI Semibold Italic" size="18.0" />
+         </font>
+      </Text>
+      <JFXListView fx:id="warning" fixedCellSize="0.0" layoutX="345.0" layoutY="78.0" prefHeight="64.0" prefWidth="249.0" style="-fx-background-color: #1d1d1d;" />
+   </children>
+</AnchorPane>
